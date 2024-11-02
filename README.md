@@ -132,6 +132,13 @@ git submodule update --init
 from within the cloned repository (e.g. `ssi-onboarding-24`). You will need to
 do this once per clone. You should see a bunch of files appear in `pico-sdk/`.
 
+You also need to run the same command within the `pico-sdk` directory:
+
+```
+cd pico-sdk
+git submodule update --init
+```
+
 ## Code
 
 Put this in `main.c`
@@ -179,7 +186,7 @@ commands:
 
 ```
 mkdir -p ~/.pico-sdk/cmake
-touch ~/.pico-sdk/pico-vscode.cmake
+touch ~/.pico-sdk/cmake/pico-vscode.cmake
 ```
 
 Now, enter `build`, then initialize CMake:
